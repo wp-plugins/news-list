@@ -1,10 +1,11 @@
 <?php
 /*
  Plugin Name: NewsTicker
- Plugin URI: http://URI_Of_Page_Describing_Plugin_and_Updates
- Description: Handle newsTicker functionailty in home page.
- Version: 1.0
+ Plugin URI: https://wordpress.org/plugins/news-list/
+ Description: Plugin For handling latest news functionality which are added from admin console. We can use this plugin as a sidebar widget or we can display latest news anywere in the site using short code get_news_sticker get_news_ticker  
+ Version: 1.0.1
  Author: Mahinsha/Sajin Saleem
+ Company:QBurst
  */
 
 ob_start();
@@ -141,10 +142,10 @@ class news_list extends WP_Widget {
 		
 		global $wpdb;
 		$row = 1;
-		$get_left_results = $wpdb->get_results("SELECT * FROM ".$wpdb->prefix."news_ticker WHERE news_category = 0 ORDER BY news_ticker_id DESC LIMIT 5");
+		$get_left_results = $wpdb->get_results("SELECT * FROM ".$wpdb->prefix."news_ticker WHERE news_category = 0 ORDER BY news_ticker_id DESC LIMIT 12");
 
 		$build_html = "<div class='news_block_widget'>
-					<div class='news-block-header'>DAILY DIGITAL INSIGHTS </div>
+					<div class='news-block-header'>Today's Top Stories </div>
 						<ul class=''>";
 						foreach($get_left_results as $result){
 
