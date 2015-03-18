@@ -2,7 +2,7 @@
 /*
  Plugin Name: NewsTicker
  Plugin URI: https://wordpress.org/plugins/news-list/
- Description: Plugin For handling latest news functionality which are added from admin console. We can use this plugin as a sidebar widget or we can display latest news anywere in the site using short code get_news_sticker get_news_ticker  
+ Description: Plugin For handling latest news functionality which are added from admin console. We can use this plugin as a sidebar widget or we can display latest news anywere in the site using short code get_news_sticker
  Version: 1.0.1
  Author: Mahinsha/Sajin Saleem
  Company:QBurst
